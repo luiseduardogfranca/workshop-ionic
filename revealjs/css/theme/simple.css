@@ -21,7 +21,7 @@ body {
   font-family: "font-joseifin";
   font-size: 40px;
   font-weight: normal;
-  color: #000; }
+  color: #ffffff; }
 
 ::selection {
   color: #fff;
@@ -48,7 +48,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #000;
+  color: rgb(255, 255, 255);
   font-family: "font-joseifin";
   font-weight: normal;
   line-height: 1.2;
