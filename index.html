@@ -93,7 +93,7 @@
             <p>Primeiros passos com Git</p>
             <pre class="bash" data-trim contenteditable>
               <code>
-#Gere uma chave SSH
+#Gere uma chave SSH que será criada em <strong>~/.ssh/</strong> 
 <span class="icons"></span> ssh-keygen -t rsa -C "your comment"
 
 #Crie uma pasta de sua preferência
@@ -119,7 +119,7 @@
               <p class="fragment fade-up"> <span class="icons"></span> Plataforma de hospedagem de código;</p>
               <p class="fragment fade-up"> <span class="icons"></span> Permite o controle de versão de código com o Git;</p>
               <p class="fragment fade-up"> <span class="icons"></span> Permite que os usuários contribuam em outros projetos;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> E ofeta também a hospedagem de páginas com o <a href="https://pages.github.com/">GitHub Pages.</a> </p>
+              <p class="fragment fade-up"> <span class="icons"></span> E ofeta também a hospedagem de páginas com o <a href="https://pages.github.com/">GitHub Pages </a> e de partes de código com o <a href="https://gist.github.com/"> GitHub Gist</a>.</p>
 
             </div>
           </section>
@@ -137,9 +137,48 @@
             <p class="title-topic"> Crie um novo repositório com o nome do seu projeto</p>
             <img src="./images/new-repo.png" alt="New repo">
           </section>
+
+          <section>
+            <p class="title-topic"> Crie um novo repositório com o nome do seu projeto</p>
+            <img src="./images/create-repo.png" alt="New repo">
+          </section>
+
+          <section>
+            <p class="title-topic"> Copie a URL para configurar o repositório local com o remoto </p>
+            <img src="./images/config-repo.png" alt="Config repo">
+          </section>
+
+          <section>
+            <p>Configurando repositório local</p>
+            <pre>
+              <code class="bash" data-trim contenteditable>
+#Adiciona a URL do repositório ao arquivo de configuração <strong>.git/config</strong>
+<span class="icons"></span> git remote add origin your_url.com
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <p>Enviando projeto para o repositório no GitHub</p>
+            <pre>
+              <code class="bash" data-trim contenteditable>
+#Visualize o status atual do seu projeto
+<span class="icons"></span> git status
+
+#Adicione os arquivos a fila para ser enviado
+<span class="icons"></span> git add .
+
+#Finalize a transação dos dados
+<span class="icons"></span> git commit -m "Meu primeiro commit"
+
+#Envie os dados para o repositório
+<span class="icons"></span> git push origin master
+              </code>
+            </pre>
+          </section>
         </section>
 
-        <section>
+        <!-- <section>
           <section>
             <h2>API com (<i>Flask</i>)</h2>
           </section>
@@ -155,7 +194,7 @@
           <section>
             <h2>Angular + Web App</h2>
           </section>
-        </section>
+        </section> -->
       </div>
     </div>
 
